@@ -23,3 +23,4 @@ Run gradient_example.pde in Processing.
 <img width="395" alt="linear_gradient" src="https://github.com/user-attachments/assets/fde27935-1645-497a-88af-d3799ed215b9" />
 
 **Design notes**
+Similar to javascript P5js language, uses more word commands, update function is neccessary, ++ for iteration, float stores a decimal value, neccessary to divide/2 to set coordinate in middle, 
