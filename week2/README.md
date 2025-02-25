@@ -1,5 +1,10 @@
 Week 2: 
 
+**Color Channel Swap**
+
+<img width="508" alt="Screenshot 2025-02-25 at 14 26 00" src="https://github.com/user-attachments/assets/c25fc711-07e2-4eb1-9451-14fb3b1b4ec7" />
+
+
 **Group Task**
 
 - Half Half
