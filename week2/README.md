@@ -4,6 +4,10 @@ Week 2:
 
 <img width="508" alt="Screenshot 2025-02-25 at 14 26 00" src="https://github.com/user-attachments/assets/c25fc711-07e2-4eb1-9451-14fb3b1b4ec7" />
 
+**Histogram**
+
+<img width="509" alt="Screenshot 2025-02-25 at 14 28 30" src="https://github.com/user-attachments/assets/0d056c2b-43d7-462d-8363-04bafc95ca30" />
+
 
 **Group Task**
 
