@@ -1,4 +1,20 @@
-Week 2: 
+**Week 2: Manipulating and Analyzing Pixels**
+
+Experimented with manipulating and analyzing pixels to play around with color formation.
+
+**Requirements**
+
+Written in Processing 4.3
+
+Video library collection required, PImage 
+
+**Operation**
+
+Learnt how to use lerpcolor, importance of documentation using Github, image/video upload 
+
+**Screengrabs**
+
+
 
 **Color Channel Swap**
 
