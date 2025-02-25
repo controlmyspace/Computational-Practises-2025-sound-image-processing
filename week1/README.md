@@ -11,6 +11,7 @@ Run gradient_example.pde in Processing.
 
 **Screengrab**
 - Basic Gradient
+  
   <img width="392" alt="Basic gradient" src="https://github.com/user-attachments/assets/b008af76-d66f-4888-b7f0-a7721bb3f1c7" />
 
 - Radial Gradient
