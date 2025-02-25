@@ -2,7 +2,12 @@ Week 2:
 
 **Color Channel Swap**
 
+Played around with RGB color assignments, which caused the color manipulation. 
+
 <img width="508" alt="Screenshot 2025-02-25 at 14 26 00" src="https://github.com/user-attachments/assets/c25fc711-07e2-4eb1-9451-14fb3b1b4ec7" />
+
+<img width="510" alt="Screenshot 2025-02-25 at 14 27 30" src="https://github.com/user-attachments/assets/f24b96f1-4029-4ae2-962c-fe06ab918c55" />
+
 
 **Histogram**
 
