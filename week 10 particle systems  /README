@@ -1,1 +1,12 @@
+**Week 10**
+Experimenting with particle systems & vectors
 
+**Screengrab**
+- Particle System: Cherry Blossom Petals falling down, wind control is enabled: when left key pressed, wind blows petals to left of the screen and vice versa.
+
+
+ ![Alt text](desktop/petals.png)
+
+
+**Design notes**
+Vector function, physical simulation of natural phemomena. 
