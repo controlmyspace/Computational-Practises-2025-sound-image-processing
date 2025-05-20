@@ -1,7 +1,6 @@
 <h1>Computational Practises: Sound & Image Processing</h1>
 
-**Year 1, Spring Term 2025**
-Processing Software (Java coding language) 
+**Year 1, Spring Term 2025, Processing Software (Java coding language)**
 
 <h2>Weekly topics & Tasks</h2>
 
