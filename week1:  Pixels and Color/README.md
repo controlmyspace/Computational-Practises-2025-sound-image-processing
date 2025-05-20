@@ -1,5 +1,10 @@
-**Week 1**
+**Week-01: Pixels and Colour**
+
 Experimenting with pixels gradients and colors.
+
+**Weekly Task**
+
+Experiment with the code in examples/gradient: add more colors into the gradient, change it’s direction, make a circular gradient centred on the middle of the screen
 
 **Requirements**
 Written in Processing 4.3
