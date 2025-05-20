@@ -8,4 +8,4 @@ Sketch Goals: how might you use noise to animate the terrain.
 
 <h2>Video Link</h2>
 
-<a href="https://drive.google.com/drive/folders/1T75eRaoRypi-Tr0rzOrSzOxzqg6Timwb?usp=sharing">Week 4 Task Video</a>
+<a href="https://drive.google.com/file/d/12Q106nUk-b9ExX--tJl90IzdaJgUkBbv/view?usp=drive_link">Week 4 Task Video</a>
