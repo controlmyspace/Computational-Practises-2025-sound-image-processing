@@ -16,7 +16,7 @@ In the histogram sketch is a processing script that converts a photo to black an
 
 <h2>Screengrabs</h2>
 
-**Color Channel Swap**
+<h4>Color Channel Swap</h4>
 
 Played around with RGB color assignments, which caused the color manipulation. 
 
@@ -25,12 +25,12 @@ Played around with RGB color assignments, which caused the color manipulation.
 <img width="510" alt="Screenshot 2025-02-25 at 14 27 30" src="https://github.com/user-attachments/assets/f24b96f1-4029-4ae2-962c-fe06ab918c55" />
 
 
-**Histogram**
+<h4>Histogram</h4>
 
 <img width="509" alt="Screenshot 2025-02-25 at 14 28 30" src="https://github.com/user-attachments/assets/0d056c2b-43d7-462d-8363-04bafc95ca30" />
 
 
-**Group Task: Half Half**
+<h4>Group Task: Half Half</h4>
 
 <h5>Original Image</h5>
 
