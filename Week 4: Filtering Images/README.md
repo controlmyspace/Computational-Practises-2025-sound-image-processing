@@ -1,6 +1,10 @@
-<h1>Week-04: Filtering Images</h1>
+<h1>Week 4: Filtering Images</h1>
 
 Generate a 2D landscape using Perlin Noise and apply a duotone color effect based on the terrain heights. The goal is to understand how to blend two colors smoothly based on the terrain values, creating a visually interesting landscape with dynamic color transitions.
 Sketch Goals: how might you use noise to animate the terrain.
 
 <h2>Screengrabs</h2>
+
+<h2>Video Link</h2>
+
+<a href="[url](https://drive.google.com/drive/folders/1T75eRaoRypi-Tr0rzOrSzOxzqg6Timwb?usp=sharing)">Week 4 Task Video</a>
