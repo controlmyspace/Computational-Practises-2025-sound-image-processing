@@ -1,3 +1,12 @@
+<h1>Week 3: Graphic Vectors</h1>
+
+<h2>Weekly Task</h2>
+In this task, you will use the random() function in Processing to create a grid of circles arranged in a chequerboard pattern. Each circle will either have a random shade of color or a fixed color, alternating across the grid.
+
+Hints: Use random() to generate random values for colors (check the Processing reference). For the chequerboard pattern, modulo can help you alternate between two sets of values, ensuring the correct placement of random and fixed color circles.
+
+<h2>Screengrabs</h2>
+
 <img width="384" alt="Screenshot 2025-03-04 at 10 18 45" src="https://github.com/user-attachments/assets/1df912ab-1cca-442d-965c-90a558c904e2" />
 <img width="391" alt="Screenshot 2025-03-04 at 10 22 11" src="https://github.com/user-attachments/assets/f0699a13-d03f-4f36-b3c7-d985f919e36d" />
 <img width="389" alt="Screenshot 2025-03-04 at 10 29 41" src="https://github.com/user-attachments/assets/980b22e7-b167-406e-ab5d-2e096597fd3d" />
