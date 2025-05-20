@@ -14,8 +14,7 @@ No special libraries required.
 <h2>Operation</h2>
 Run gradient_example.pde in Processing.
 
-<h2>Screengrab</h2>
-• Basic Gradient
+<h2>Screengrab</h2> • Basic Gradient
 
   <img width="392" alt="Basic gradient" src="https://github.com/user-attachments/assets/b008af76-d66f-4888-b7f0-a7721bb3f1c7" />
 
