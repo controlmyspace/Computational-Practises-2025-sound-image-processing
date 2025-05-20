@@ -1,4 +1,4 @@
-<h1>Week-01: Pixels and Colour<h1>
+<h1>Week-01: Pixels and Colour</h1>
 
 Experimenting with pixels gradients and colors.
 
