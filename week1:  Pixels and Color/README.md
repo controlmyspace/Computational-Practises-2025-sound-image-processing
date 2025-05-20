@@ -16,6 +16,7 @@ Run gradient_example.pde in Processing.
 
 <h2>Screengrab</h2>
 - Basic Gradient
+
   
   <img width="392" alt="Basic gradient" src="https://github.com/user-attachments/assets/b008af76-d66f-4888-b7f0-a7721bb3f1c7" />
 
@@ -28,4 +29,5 @@ Run gradient_example.pde in Processing.
 <img width="395" alt="linear_gradient" src="https://github.com/user-attachments/assets/fde27935-1645-497a-88af-d3799ed215b9" />
 
 <h2>Design notes</h2>
+
 Similar to javascript P5js language, uses more word commands, update function is neccessary, ++ for iteration, float stores a decimal value, neccessary to divide/2 to set coordinate in middle, 
