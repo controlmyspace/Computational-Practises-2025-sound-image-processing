@@ -4,6 +4,7 @@ Generate a 2D landscape using Perlin Noise and apply a duotone color effect base
 Sketch Goals: how might you use noise to animate the terrain.
 
 <h2>Screengrabs</h2>
+<img src="Week 4 Task Perlin Noise.png" alt="Week 4 Task Screengrab">
 
 <h2>Video Link</h2>
 
