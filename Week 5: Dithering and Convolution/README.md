@@ -5,6 +5,10 @@ In this task, you will implement a real-time image processing system using your 
 
 **Filters:** Apply filters to images, including thresholding, brightness, contrast, inversion, and duotone to an image by manipulating pixel values, use lerpColor to blend between colour variables
 
-<h2>Screengrab</h2>
+<h2>Screengrabs</h2>
+
+<img src="Week 5 Task Screengrab.png" alt="Week 4 Task Screengrab">
 
 <h2>Video Link</h2>
+
+<a href="https://drive.google.com/file/d/1KDlFbUVMvKGi6yuub-ScLws9qnsvM533/view?usp=drive_link">Week 5 Task Video</a>
