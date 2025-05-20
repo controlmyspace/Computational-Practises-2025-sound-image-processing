@@ -29,6 +29,8 @@ Played around with RGB color assignments, which caused the color manipulation.
 
 <img width="509" alt="Screenshot 2025-02-25 at 14 28 30" src="https://github.com/user-attachments/assets/0d056c2b-43d7-462d-8363-04bafc95ca30" />
 
+<h4>Filtered</h4>
+<img src="Filtered Sample.png" alt="Filtered">
 
 <h4>Group Task: Half Half</h4>
 
