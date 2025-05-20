@@ -1,4 +1,4 @@
-<h1>Week-06: Digital Sound</h1>
+<h1>Week 6: Digital Sound</h1>
 
 <h2>Weekly Task</h2>
 
