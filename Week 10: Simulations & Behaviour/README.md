@@ -12,7 +12,8 @@ Experimenting with particle systems & vectors
 <a href="https://drive.google.com/file/d/1SF7ZYdcdJ2HjulQ20vkj0ZHcpNpnDZPl/view?usp=drive_link">Week 10 Task Video</a>
 
 <h3>Screengrab</h3>
-- Particle System: Cherry Blossom Petals falling down, wind control is enabled: when left key pressed, wind blows petals to left of the screen and vice versa.
+Cherry blossom petals falling down, wind control is enabled: when left key pressed, wind blows petals to left of the screen and vice versa. The longer you press the stronger the wind. When key released, wind stops blowing. Petals slowly and softly return to position with no wind impact. 
+
 <img src="Week 10 Task Cherry Blossoms Falling.png" alt="Week 10 Task Screengrab">
 
 
