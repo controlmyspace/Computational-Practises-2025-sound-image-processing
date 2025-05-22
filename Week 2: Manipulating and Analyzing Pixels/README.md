@@ -45,3 +45,5 @@ Played around with RGB color assignments, which caused the color manipulation.
 
 <h2>Design Note</h2>
 Struggled with organising the image files with corresponding folders, in order for the image to be successfully uploaded to the code file. Realised that organisation is vital, the files need to be able to read and locate all the necessary files (such as images, videos and sounds) in the coorect corresponding folders in order for the code to work. For instance the image file has to be in the same folder that the corresponding code is located in, in order to work. Multiply coordinates by pixels to create gradient. Used dist() to find two points between coordinates to implement gradient visual. 
+
+Struggled when inputing my own image into histogram code: image appears twice and smaller in top of frame, despite adjusting frame size to original image size. Need to fix design in code. 
