@@ -17,14 +17,12 @@ Run gradient_example.pde in Processing.
 
 <a href="https://drive.google.com/file/d/1pWyajHDPxN7gEwE0rLKhgpf5O2AuvFZ9/view?usp=drive_link">Week 1 Task Gradient with mouse interaction video</a>
 
-<h2>Screengrab</h2> 
-Static code, no video necessary 
+<h2>Screengrab</h2>
 
-• Gradient with Mouse Interaction
+• Gradient with Mouse Interaction (video linked above)
+ <img src="Week 1 Task Gradient with mouse interaction.png" alt="Mouse Interaction Gradient">
 
- <img width="392" alt="Mouse Interaction Gradient" src="Week 1 Task Gradient with mouse interaction.png" />
-
-• Linear Gradient
+• Linear Gradient (Static code, no video necessary)
 
 <img width="395" alt="linear_gradient" src="https://github.com/user-attachments/assets/fde27935-1645-497a-88af-d3799ed215b9" />
 
