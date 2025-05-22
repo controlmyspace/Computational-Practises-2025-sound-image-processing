@@ -15,6 +15,7 @@ Learnt how to use lerpcolor, importance of documentation using Github, image/vid
 In the histogram sketch is a processing script that converts a photo to black and white, and shows a histogram of brightness. Your task is to revert the code so that it shows the image in its original colour, and then show three histograms: one each for the red, green, and blue channels of the image. It doesn't matter where you place the histograms on the screen for now. They just need to be visible. Try the sketch with your own images, too. Stretch goal: can you combine the color swap sketch with the 3 histogram to analyse the difference when you swap the colors.
 
 <h2>Screengrabs</h2>
+static only, no video necessary 
 
 <h4>Color Channel Swap</h4>
 
