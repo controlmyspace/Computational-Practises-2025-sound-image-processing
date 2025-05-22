@@ -17,8 +17,12 @@ In the histogram sketch is a processing script that converts a photo to black an
 <h3>Weekly Task Screengrabs</h3>
 
 <img src="original photo.jpg" alt="original">
-
-
+<img src="grayscale.png" alt="grayscale">
+<img src="original.png" alt="reverted to original from grayscale">
+<h4>Final Weekly Task</h4>
+<img src="Weekly Task 2.png" alt="Final Weekly Task">
+<h4>Extra</h4>
+<img src="green hue.png" alt="extra green hue">
 
 
 
