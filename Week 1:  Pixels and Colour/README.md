@@ -15,6 +15,7 @@ No special libraries required.
 Run gradient_example.pde in Processing.
 
 <h2>Screengrab</h2> 
+Static code, no video necessary 
 
 • Basic Gradient
 
