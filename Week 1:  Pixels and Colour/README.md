@@ -7,8 +7,6 @@ Experimenting with pixels gradients and colors.
 Experiment with the code in examples/gradient: add more colors into the gradient, change it’s direction, make a circular gradient centred on the middle of the screen
 
 <h2>Requirements</h2>
-Written in Processing 4.3
-
 No special libraries required.
 
 <h2>Operation</h2>
