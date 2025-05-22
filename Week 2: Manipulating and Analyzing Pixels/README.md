@@ -16,6 +16,7 @@ In the histogram sketch is a processing script that converts a photo to black an
 
 <h3>Weekly Task Screengrabs</h3>
 
+<img src="original photo.jpg" alt="original">
 
 
 
