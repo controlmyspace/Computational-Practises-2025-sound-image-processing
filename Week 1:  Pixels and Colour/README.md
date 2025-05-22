@@ -7,7 +7,7 @@ Experimenting with pixels gradients and colors.
 Experiment with the code in examples/gradient: add more colors into the gradient, change it’s direction, make a circular gradient centred on the middle of the screen
 
 <h2>Requirements</h2>
-No special libraries required.
+No special libraries required. LoadPixels function.
 
 <h2>Operation</h2>
 Run gradient_example.pde in Processing.
