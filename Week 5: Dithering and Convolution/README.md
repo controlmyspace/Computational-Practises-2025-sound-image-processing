@@ -7,7 +7,7 @@ In this task, you will implement a real-time image processing system using your 
 
 <h2>Screengrabs</h2>
 
-<img src="Week 5 Task Screengrab.png" alt="Week 4 Task Screengrab">
+<img src="Week 5 Task Screengrab.png" alt="Week 5 Task Screengrab">
 
 <h2>Video Link</h2>
 
