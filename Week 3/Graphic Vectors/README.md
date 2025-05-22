@@ -8,10 +8,12 @@ Hints: Use random() to generate random values for colors (check the Processing r
 <h3> Video Link </h3>
 <a href="https://drive.google.com/file/d/1GbM7kLdpMtYaMgIvA7yQi-EuWr5OozF4/view?usp=drive_link">Week 3 Task Video</a>
 
+<h3>Weekly Task Screengrab</h3>
+
 <img src="Week 3 Task Checkerboard Circle.png" alt="Week 3 Task Screengrab">
 
 
-<h2>Screengrabs</h2>
+<h2>Class Workd Screengrabs</h2>
 
 <img width="384" alt="Screenshot 2025-03-04 at 10 18 45" src="https://github.com/user-attachments/assets/1df912ab-1cca-442d-965c-90a558c904e2" />
 <img width="391" alt="Screenshot 2025-03-04 at 10 22 11" src="https://github.com/user-attachments/assets/f0699a13-d03f-4f36-b3c7-d985f919e36d" />
