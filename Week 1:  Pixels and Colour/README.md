@@ -14,6 +14,9 @@ No special libraries required.
 <h2>Operation</h2>
 Run gradient_example.pde in Processing.
 
+<h2>Video Link</h2>
+<a href="https://drive.google.com/file/d/1KSukGpKAT2CDheN1nUmySagQpohdh05l/view?usp=drive_link">Week 1 Task Radial Gradient Video</a>
+
 <h2>Screengrab</h2> 
 Static code, no video necessary 
 
