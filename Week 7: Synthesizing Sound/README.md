@@ -1,5 +1,11 @@
 <h1>Week 7: Synthesizing Sound</h1>
 
+<h2>Requirements</h2>
+
+ - Download Minim audio library for Processing
+ - Download audio files 
+ 
+
 <h2>Weekly Task</h2>
 
 Using at least 4 samples, create a drum pattern. Make the pattern change in time. You could do that by: - adding an element of randomness to at least one of the samples, - alternate the pattern depending on time, e.g. count bars based on frameCount, seconds or milliseconds
