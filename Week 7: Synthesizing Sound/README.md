@@ -4,7 +4,7 @@
 
  - Download Minim audio library for Processing
  - Download audio files
- - Drum sounds sampled from: <a href="https://samplefocus.com/">link text</a> 
+ - Drum sounds sampled from: <a href="https://samplefocus.com/" Sample Sound</a> 
  
 
 <h2>Weekly Task</h2>
