@@ -1,5 +1,8 @@
 <h1>Week 6: Digital Sound</h1>
 
+<h2>Requirements</h2>
+Import Processing Sound library
+
 <h2>Weekly Task</h2>
 
 (Required minimum) Using at least 3 oscillators and/or filters, try to design a sound for a sci-fi movie, when the main characters arrive onto a new planet.
