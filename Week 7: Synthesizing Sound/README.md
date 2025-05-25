@@ -3,7 +3,8 @@
 <h2>Requirements</h2>
 
  - Download Minim audio library for Processing
- - Download audio files 
+ - Download audio files
+ - Drum sounds sampled from: <a href="https://samplefocus.com/">link text</a> 
  
 
 <h2>Weekly Task</h2>
