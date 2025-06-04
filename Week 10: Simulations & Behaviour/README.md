@@ -1,4 +1,4 @@
-<h1>Week 10: Particle Systems</h1>
+<h1>Week 10: Simulation & Behaviour</h1>
 
 <h2>Weekly Task</h2>
 Create an interactive sketch implementing Particle Systems and ArrayLists.
