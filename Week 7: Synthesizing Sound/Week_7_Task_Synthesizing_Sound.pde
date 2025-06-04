@@ -56,7 +56,7 @@ void draw() {
     for (int i = 0; i < fft.specSize()/4; i++) {
       audioLevel += fft.getBand(i);
     }
-    audioLevel = map(audioLevel, 0, 5, 0, 1);
+    audioLevel = map(audioLevel, 0, 20, 0, 1);
   }
   
   //drum pattern
