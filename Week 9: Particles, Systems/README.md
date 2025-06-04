@@ -22,6 +22,8 @@ You're a player running away from a giant space worm. You're a zombie and you ne
 
 <h2>Video Link</h2>
 
+<a href="https://drive.google.com/file/d/1CNmazD7tT6uA-5abhrhpqvPZM-jpc5vs/view?usp=drive_link">Week 9 Task Video</a>
+
 <h2>Design Notes</h2>
 
 <h3>Museum Preservation game</h3>
