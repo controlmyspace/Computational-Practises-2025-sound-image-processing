@@ -21,6 +21,8 @@ Design your own beat using clapping, visuals, or however you like, and try to re
 
 <h2>Screengrabs</h2>
 
+<img src="Week 7 Synthesizing Sound.png" alt="Week 10 Task Screengrab">
+
 <h2>Video Link</h2>
 <a href="https://drive.google.com/file/d/1ku28wYmF_n955N8Oe-fUtrBmY-S5gL9I/view?usp=drive_link">Week 7 Task Video</a>
 
