@@ -86,7 +86,7 @@ You collect flowers of different kinds to complete a predefined bouquet.
 
 <h3>Week-10: Simulation & Behaviour</h3>
 
-Create an interactive sketch implementing Particle Systems and ArrayLists.
+Create an interactive sketch implementing Particle Systems and Array Lists.
 
 The sketch should have:
 at least 3 vectors (PVector) for each particle: location, velocity, acceleration,
