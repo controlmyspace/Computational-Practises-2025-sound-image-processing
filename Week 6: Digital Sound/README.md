@@ -5,7 +5,7 @@ Import Processing Sound library
 
 <h2>Weekly Task</h2>
 
-(Required minimum) Using at least 3 oscillators and/or filters, try to design a sound for a sci-fi movie, when the main characters arrive onto a new planet.
+Use at least 3 oscillators and/or filters, try to design a sound for a sci-fi movie, when the main characters arrive onto a new planet (Required minimum).
 
 Frequency modulation - alternate the frequency over time Code example.
 Feel free to add filters if you want to. More about sound filters. Filter demo code
