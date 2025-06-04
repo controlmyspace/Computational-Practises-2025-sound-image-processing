@@ -18,6 +18,7 @@ Feel free to add filters if you want to. More about sound filters. Filter demo c
 <h2>Video Link</h2>
 <a href="https://drive.google.com/file/d/1C0UUPLdvRpHU6YzzhloUV0OJhwj0MuxP/view?usp=drive_link">Week 6 Task Video</a>
 <h2>Design Notes</h2>
+
 - Two filters: low & high pass
 
 - Two oscillators: Surface Acoustic Wave (SAW) Oscillator & Sin Wave Oscillator 
