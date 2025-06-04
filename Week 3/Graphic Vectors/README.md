@@ -26,3 +26,11 @@ Hints: Use random() to generate random values for colors (check the Processing r
 <img width="488" alt="Screenshot 2025-03-04 at 12 14 15" src="https://github.com/user-attachments/assets/a60ddd4b-f06f-4431-b1f6-cafd9100ac35" />
 <img width="395" alt="Screenshot 2025-03-04 at 12 49 18" src="https://github.com/user-attachments/assets/16a8ba14-17b0-49b4-8e30-ae2a62c809e5" />
 <img width="625" alt="Screenshot 2025-03-04 at 13 00 29" src="https://github.com/user-attachments/assets/13fed3c3-ba2b-4ee9-870d-ccb1429439dc" />
+
+<h2>Design Notes</h2>
+
+- Pinball like imagery
+
+- random colour change
+
+- slowed down frame rate to not overwhelm 
