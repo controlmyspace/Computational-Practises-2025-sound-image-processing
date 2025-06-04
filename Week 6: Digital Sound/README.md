@@ -7,7 +7,8 @@ Import Processing Sound library
 
 (Required minimum) Using at least 3 oscillators and/or filters, try to design a sound for a sci-fi movie, when the main characters arrive onto a new planet.
 
-Frequency modulation - alternate the frequency over time Code example Feel free to add filters if you want to. More about sound filters. Filter demo code
+Frequency modulation - alternate the frequency over time Code example.
+Feel free to add filters if you want to. More about sound filters. Filter demo code
 
 <h2>Screengrabs</h2>
 
