@@ -27,4 +27,8 @@ Feel free to add filters if you want to. More about sound filters. Filter demo c
 
 - Aliens are the mouse, so depending where "they" (the mouse are positioned), the sound changes. Frequency of base drone sound changes.
 
-- Space key activates sound. 
+- Space key activates sound.
+
+- boolean soundActive variable tracks whether the sound is being playing or stopped:
+    - true = oscillators playing sound
+    - false = oscillators stopped
