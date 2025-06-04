@@ -1,210 +1,122 @@
 import processing.sound.*;
-
-// Oscillators for layered sound design
-SinOsc baseOsc;        // Deep atmospheric drone
-SawOsc harmonyOsc;     // Harmonic texture layer
-TriOsc crystalOsc;     // High crystalline shimmer
-SqrOsc pulseOsc;       // Rhythmic pulse element
-
-// Filters for sound shaping
-LowPass lowFilter;     // Warm, muffled atmosphere
-BandPass bandFilter;   // Focused harmonic content
-HighPass highFilter;   // Crystalline sparkle
-
-// Sound control variables
+//2 oscillators
+SinOsc baseOsc;        // low atmospheric drone
+SawOsc harmonyOsc;     // harmony textured layer
+//2 filters
+LowPass lowFilter;     // warm atmosphere
+HighPass highFilter;   // sparkle sound
+// controlled variables
 float time = 0;
-float baseFreq = 45;   // Deep fundamental
-float intensity = 0;
+float baseFreq = 60;
 boolean soundActive = false;
-
-// Visual feedback
-color bgColor;
-float visualIntensity = 0;
 
 void setup() {
   size(800, 600);
   
-  // Initialize oscillators
+  // start oscillators and filters
   baseOsc = new SinOsc(this);
   harmonyOsc = new SawOsc(this);
-  crystalOsc = new TriOsc(this);
-  pulseOsc = new SqrOsc(this);
-  
-  // Initialize filters
   lowFilter = new LowPass(this);
-  bandFilter = new BandPass(this);
   highFilter = new HighPass(this);
   
-  // Set initial frequencies
+  //frequencies
   baseOsc.freq(baseFreq);
-  harmonyOsc.freq(baseFreq * 1.5);
-  crystalOsc.freq(baseFreq * 8);
-  pulseOsc.freq(baseFreq * 0.25);
+  harmonyOsc.freq(baseFreq * 2);
+  lowFilter.freq(400);
+  highFilter.freq(1000);
   
-  // Configure filters
-  lowFilter.freq(800);
-  bandFilter.freq(400);
-  bandFilter.bw(2.0);
-  highFilter.freq(2000);
-  
-  println("Press SPACE to start/stop the planetary arrival sound");
-  println("Move mouse to modulate the sound in real-time");
+  println("Press SPACE to start/stop sound");
 }
 
 void draw() {
-  // Dynamic background based on sound intensity
-  bgColor = lerpColor(color(5, 15, 35), color(25, 45, 85), visualIntensity);
-  background(bgColor);
+  // background
+  float bgIntensity = soundActive ? 25 : 10;
+  background(bgIntensity, bgIntensity * 1.5, bgIntensity * 3);
   
   if (soundActive) {
     updateSound();
-    drawVisualFeedback();
+    drawVisuals();
   } else {
     drawInstructions();
   }
   
-  time += 0.016; // Increment time for modulation
+  time += 0.016;
 }
 
 void updateSound() {
-  // Mouse controls for real-time modulation
-  float mouseInfluence = map(mouseX, 0, width, 0.2, 2.0);
-  float verticalMod = map(mouseY, 0, height, 0.1, 1.0);
+  // mouse control
+  float mouseMod = map(mouseX, 0, width, 0.5, 2.0);
+  float ampMod = map(mouseY, 0, height, 0.2, 1.0);
   
-  // Evolving intensity using sine waves
-  intensity = (sin(time * 0.3) + 1) * 0.5; // Main evolution
-  intensity += (sin(time * 0.7) + 1) * 0.1; // Secondary variation
-  intensity = constrain(intensity, 0, 1);
+  // low drone with modulation
+  float baseMod = baseFreq + sin(time * 0.2) * 5;
+  baseOsc.freq(baseMod * mouseMod);
+  baseOsc.amp(0.4 * ampMod);
   
-  visualIntensity = intensity;
+  //harmony layer
+  float harmonyMod = (baseFreq * 2) + sin(time * 0.4) * 10;
+  harmonyOsc.freq(harmonyMod * mouseMod);
+  harmonyOsc.amp(0.2);
   
-  // Base atmospheric drone with slow frequency modulation
-  float baseMod = baseFreq + sin(time * 0.2) * 8 + sin(time * 0.05) * 3;
-  baseOsc.freq(baseMod * mouseInfluence);
-  baseOsc.amp(0.3 * intensity * verticalMod);
+  //filter modulation
+  lowFilter.freq(300 + sin(time * 0.5) * 200 + mouseX);
+  highFilter.freq(800 + sin(time * 0.3) * 400 + mouseY);
   
-  // Harmonic layer with faster modulation
-  float harmonyMod = (baseFreq * 1.5) + sin(time * 0.4) * 12 + cos(time * 0.15) * 6;
-  harmonyOsc.freq(harmonyMod * mouseInfluence);
-  harmonyOsc.amp(0.15 * intensity);
-  
-  // Crystalline high frequency layer
-  float crystalMod = (baseFreq * 8) + sin(time * 1.2) * 50 + sin(time * 0.8) * 25;
-  crystalOsc.freq(crystalMod * mouseInfluence);
-  crystalOsc.amp(0.08 * intensity * (1 - verticalMod * 0.5));
-  
-  // Pulsing low frequency element
-  float pulseMod = (baseFreq * 0.25) + sin(time * 0.1) * 2;
-  pulseOsc.freq(pulseMod);
-  pulseOsc.amp(0.2 * intensity * sin(time * 2) * sin(time * 2));
-  
-  // Dynamic filter modulation
-  float cutoffMod = 400 + sin(time * 0.6) * 300 + mouseX * 2;
-  lowFilter.freq(cutoffMod);
-  
-  float bandMod = 300 + sin(time * 0.8) * 200 + mouseY;
-  bandFilter.freq(bandMod);
-  
-  // Apply filters to different oscillators
+  //filters applied
   lowFilter.process(baseOsc);
-  bandFilter.process(harmonyOsc);
-  highFilter.process(crystalOsc);
+  highFilter.process(harmonyOsc);
 }
 
-void drawVisualFeedback() {
-  // Central energy orb
+void drawVisuals() {
+  //orb
   pushMatrix();
   translate(width/2, height/2);
   
-  // Multiple layers of visual feedback
-  for (int i = 5; i > 0; i--) {
-    float alpha = map(i, 1, 5, 255 * visualIntensity, 50 * visualIntensity);
-    float size = i * 60 * (1 + visualIntensity);
-    
-    fill(70 + i * 30, 120 + i * 20, 200 + i * 10, alpha);
-    noStroke();
-    ellipse(0, 0, size, size);
-  }
+  float orbSize = 150;
+  fill(100, 150, 255, 200);
+  noStroke();
+  ellipse(0, 0, orbSize, orbSize);
   
-  // Radiating energy lines
-  stroke(150, 200, 255, 100 * visualIntensity);
+  //ring
+  stroke(200, 220, 255, 150);
   strokeWeight(2);
-  for (int i = 0; i < 12; i++) {
-    float angle = (TWO_PI / 12) * i + time * 0.5;
-    float lineLength = 100 + sin(time * 2 + i) * 50;
-    
-    pushMatrix();
-    rotate(angle);
-    line(80, 0, 80 + lineLength * visualIntensity, 0);
-    popMatrix();
-  }
+  noFill();
+  ellipse(0, 0, orbSize * 1.5, orbSize * 1.5);
   
   popMatrix();
-  
-  // Floating particles
-  for (int i = 0; i < 20; i++) {
-    float x = 50 + (noise(i * 0.1, time * 0.3) * (width - 100));
-    float y = 50 + (noise(i * 0.1 + 100, time * 0.2) * (height - 100));
-    float size = 3 + sin(time * 3 + i) * 2;
-    
-    fill(200, 220, 255, 150 * visualIntensity);
-    noStroke();
-    ellipse(x, y, size, size);
-  }
-  
-  // Sound parameters display
-  fill(255, 200);
-  textAlign(LEFT);
-  text("Intensity: " + nf(intensity, 1, 2), 20, 30);
-  text("Mouse X: Frequency Mod", 20, height - 40);
-  text("Mouse Y: Amplitude Control", 20, height - 20);
 }
 
 void drawInstructions() {
   fill(255);
   textAlign(CENTER);
-  textSize(24);
-  text("SORPIA PLANET ARRIVAL", width/2, height/2 - 60);
+  textSize(20);
+  text("SORPIA PLANET ARRIVAL", width/2, height/2 - 40);
+  text("Press SPACE to activate", width/2, height/2);
+  text("Move mouse to control", width/2, height/2 + 30);
   
-  textSize(16);
-  text("Press SPACE to activate sound", width/2, height/2 - 20);
-  text("Move mouse to modulate in real-time", width/2, height/2);
-  
-  // Static visual elements
+  //ring graphic
   stroke(100, 150, 200, 100);
-  strokeWeight(1);
   noFill();
-  for (int i = 0; i < 5; i++) {
-    ellipse(width/2, height/2, i * 80, i * 80);
-  }
+  ellipse(width/2, height/2, 200, 200);
 }
 
 void keyPressed() {
   if (key == ' ') {
     if (soundActive) {
-      // Stop all oscillators
       baseOsc.stop();
       harmonyOsc.stop();
-      crystalOsc.stop();
-      pulseOsc.stop();
       soundActive = false;
     } else {
-      // Start all oscillators
       baseOsc.play();
       harmonyOsc.play();
-      crystalOsc.play();
-      pulseOsc.play();
       soundActive = true;
     }
   }
 }
 
-// Clean up when sketch closes
 void stop() {
   if (soundActive) {
     baseOsc.stop();
     harmonyOsc.stop();
-    crystalOsc.stop();
-    pulseOsc.stop();
   }
 }
