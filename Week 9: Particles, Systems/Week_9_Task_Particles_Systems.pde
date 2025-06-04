@@ -14,7 +14,7 @@ class Archivist {
   }
   
   void update() {
-    // Move left and right with arrow keys
+    //left and right movement with arrow keys
     if (keyPressed) {
       if (key == CODED) {
         if (keyCode == LEFT && x > w/2) {
@@ -27,40 +27,40 @@ class Archivist {
   }
   
   void display() {
-    // Draw archivist as a simple character
+    //archivist character
     fill(100, 150, 200);
     rectMode(CENTER);
     rect(x, y, w, h);
     
-    // Head
+    //head
     fill(255, 220, 177);
     ellipse(x, y - h/2 - 15, 30, 30);
     
-    // Arms
+    //arms
     fill(100, 150, 200);
     rect(x - w/2 - 10, y - 10, 8, 30);
     rect(x + w/2 + 10, y - 10, 8, 30);
     
-    // Eyes
+    //eyes
     fill(0);
     ellipse(x - 5, y - h/2 - 18, 3, 3);
     ellipse(x + 5, y - h/2 - 18, 3, 3);
     
-    // Display stacked archives on head
+    //stacked archives on head
     displayStack();
   }
   
   void displayStack() {
-    float stackY = y - h/2 - 30; // Start above the head
+    float stackY = y - h/2 - 30; //begin above the head
     
     for (int i = 0; i < stackedArchives.size(); i++) {
       String archiveType = stackedArchives.get(i);
-      float itemY = stackY - (i * 25); // Stack items with 25 pixel spacing
+      float itemY = stackY - (i * 25); //items stacked with 25 pixel spacing
       
       rectMode(CENTER);
       
       if (archiveType.equals("archive")) {
-        // Draw archive
+        //archive drawing
         fill(139, 69, 19);
         rect(x, itemY, 30, 20);
         fill(255);
@@ -71,13 +71,13 @@ class Archivist {
     }
   }
   
-  // Check if object hits the stack or archivist
+  //if object hits the stack or archivist
   boolean catches(FallingObject obj) {
-    // Check collision with archivist body
+    //collision with archivist
     boolean hitsBody = (obj.x > x - w/2 && obj.x < x + w/2 && 
                        obj.y > y - h/2 && obj.y < y + h/2);
     
-    // Check collision with stack (if there are stacked items)
+    //collision with stack (if there are items)
     boolean hitsStack = false;
     if (stackedArchives.size() > 0) {
       float stackTop = y - h/2 - 30 - (stackedArchives.size() - 1) * 25;
@@ -105,13 +105,13 @@ class FallingObject {
     w = 40;
     h = 30;
     
-    // Two forces influencing movement:
-    gravity = 0.2; // Gravity force pulling down
-    windForce = random(-0.1, 0.1); // Wind force affecting horizontal movement
+    //2 forces influencing movement:
+    gravity = 0.2; 
+    windForce = random(-0.1, 0.1); //horizontal movement
     vx = windForce;
     vy = 1;
     
-    // Set colors based on type
+    //colour
     if (type.equals("archive")) {
       objColor = color(139, 69, 19);
     } else if (type.equals("water")) {
@@ -120,17 +120,17 @@ class FallingObject {
   }
   
   void update() {
-    // Apply forces
-    vy += gravity * 0.02; // Gravity increases downward velocity
-    vx += windForce * 0.01; // Wind affects horizontal movement
+    //forces
+    vy += gravity * 0.02; //gravity increases downward velocity
+    vx += windForce * 0.01; 
     
-    // Update position
+    //position
     x += vx;
     y += vy;
     
-    // Keep objects within screen bounds horizontally
+    //objects within screen horizontally
     if (x < 0 || x > width) {
-      vx *= -0.5; // Bounce off walls with energy loss
+      vx *= -0.5; //bounce off walls with energy loss
     }
   }
   
@@ -139,22 +139,21 @@ class FallingObject {
     rectMode(CENTER);
     
     if (type.equals("archive")) {
-      // Draw as archive
+      //archive
       rect(x, y, w, h);
       fill(255);
       for (int i = 0; i < 3; i++) {
         line(x - w/2 + 5, y - h/2 + 5 + i*5, x + w/2 - 5, y - h/2 + 5 + i*5);
       }
     } else if (type.equals("water")) {
-      // Draw as multiple water droplets
+      //water droplets
       fill(objColor, 180);
       
-      // Main large droplet
+      //large droplet
       ellipse(x, y, w*0.8, h*0.8);
-      // Add teardrop shape
     
       
-      // Smaller droplets around it
+      //small surrounding droplets
       fill(objColor, 120);
       ellipse(x - w*0.4, y + h*0.2, w*0.3, h*0.3);
       ellipse(x + w*0.3, y + h*0.3, w*0.25, h*0.25);
@@ -170,67 +169,65 @@ class FallingObject {
   }
 }
 
-// Game variables
+//game variables
 Archivist archivist;
 ArrayList<FallingObject> fallingObjects;
-ArrayList<String> stackedArchives; // Stack of archives on head
+ArrayList<String> stackedArchives;
 int score;
 boolean gameOver;
 int lastSpawnTime;
 int spawnInterval;
 String[] archiveTypes = {"archive"};
 String[] destroyerTypes = {"water"};
-float stackHeight = 0; // Current height of the stack
+float stackHeight = 0; //height of stack
 
 void setup() {
   size(800, 600);
   
-  // Initialize game
+  //start game!!
   archivist = new Archivist(width/2, height - 100);
   fallingObjects = new ArrayList<FallingObject>();
   stackedArchives = new ArrayList<String>();
   score = 0;
   gameOver = false;
   lastSpawnTime = millis();
-  spawnInterval = 2000; // Spawn every 2 seconds initially
+  spawnInterval = 2000; //spawn every 2 seconds
   stackHeight = 0;
 }
 
 void draw() {
-  background(240, 230, 210); // Museum background color
+  background(240, 230, 210);
   
   if (!gameOver) {
-    // Update and display archivist
     archivist.update();
     archivist.display();
     
-    // Spawn new objects
+    //spawn new
     if (millis() - lastSpawnTime > spawnInterval) {
       spawnObject();
       lastSpawnTime = millis();
       
-      // Gradually increase difficulty
+      //difficulty intensity increases
       if (spawnInterval > 800) {
         spawnInterval -= 10;
       }
     }
     
-    // Update and display falling objects
+    //falling objects 
     for (int i = fallingObjects.size() - 1; i >= 0; i--) {
       FallingObject obj = fallingObjects.get(i);
       obj.update();
       obj.display();
       
-      // Check for interactions (catching objects)
+      //catching objects
       if (archivist.catches(obj)) {
         if (isArchive(obj.type)) {
-          // Add archive to stack on head
           stackedArchives.add(obj.type);
           score++;
-          stackHeight += 25; // Each item adds 25 pixels to stack height
+          stackHeight += 25; //every item adds 25 pixels to height
           fallingObjects.remove(i);
         } else if (isDestroyer(obj.type)) {
-          // Game over if destroyer lands on archivist or stack
+          //GAME OVER if destroyer lands on archivist or stack
           gameOver = true;
         }
       } else if (obj.isOffScreen()) {
@@ -238,11 +235,10 @@ void draw() {
       }
     }
     
-    // Display UI
     displayUI();
     
   } else {
-    // Game over screen
+    //GAME OVER screen
     displayGameOver();
   }
 }
@@ -250,7 +246,7 @@ void draw() {
 void spawnObject() {
   float spawnX = random(50, width - 50);
   
-  // 75% chance for archives, 25% for water droplets
+  // 75% chancE archives, 25% water droplets
   if (random(100) < 75) {
     fallingObjects.add(new FallingObject(spawnX, "archive"));
   } else {
@@ -277,16 +273,16 @@ boolean isDestroyer(String type) {
 }
 
 void displayUI() {
-  // Score display
+  //Score
   fill(0);
   textSize(24);
   text("Archives Saved: " + score, 20, 30);
   
-  // Stack height display
+  //stack height
   textSize(18);
   text("Archive Stack: " + stackedArchives.size() + " archives", 20, 60);
   
-  // Instructions
+  // game instructions
   textSize(16);
   text("Use LEFT/RIGHT arrows to move", 20, height - 80);
   text("Catch archives to stack on your head!", 20, height - 60);
@@ -296,7 +292,7 @@ void displayUI() {
 
 void displayGameOver() {
   
-  // Game over text
+  //text
   fill(0);
   textAlign(CENTER);
   textSize(48);
@@ -312,6 +308,13 @@ void displayGameOver() {
   text("Press R to restart and try again", width/2, height/2 + 100);
   
   textAlign(LEFT);
+}
+
+void keyPressed() {
+  if (gameOver && (key == 'r' || key == 'R')) {
+    //restart 
+    setup();
+  }
 }
 
 void keyPressed() {
