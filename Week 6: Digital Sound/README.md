@@ -11,8 +11,7 @@ Frequency modulation - alternate the frequency over time Code example.
 Feel free to add filters if you want to. More about sound filters. Filter demo code
 
 <h2>Screengrabs</h2>
-<img src="<img width="790" alt="Week 6 Digital Sound 1" src="https://github.com/user-attachments/assets/07f37872-8a80-4949-8a9c-cd47440502c3" />
-" alt="Week 6 Task Screengrab 1">
+<img src="Week 6 Digital Sound 1" alt="Week 6 Task Screengrab 1">
 
 <h2>Video Link</h2>
 <a href="https://drive.google.com/file/d/1C0UUPLdvRpHU6YzzhloUV0OJhwj0MuxP/view?usp=drive_link">Week 6 Task Video</a>
