@@ -27,3 +27,13 @@ Design your own beat using clapping, visuals, or however you like, and try to re
 <a href="https://drive.google.com/file/d/1ku28wYmF_n955N8Oe-fUtrBmY-S5gL9I/view?usp=drive_link">Week 7 Task Video</a>
 
 <h2>Design Notes</h2>
+
+- four audio sample files: hihat, crash, kick, snare
+
+- randomness: tempo gradually slows down over time
+
+- audio-reactive visual: pulsing circle which is audio sensitive
+
+- BMP indicator visually implemented
+
+- quite random & unpleasant drum pattern/sound
