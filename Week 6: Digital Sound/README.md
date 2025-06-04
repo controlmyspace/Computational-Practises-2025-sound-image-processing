@@ -16,7 +16,7 @@ Feel free to add filters if you want to. More about sound filters. Filter demo c
 <img src="Week 6 Digital Sound 2.png" alt="Week 6 Task Screengrab 2">
 
 <h2>Video Link</h2>
-<a href="https://drive.google.com/file/d/1C0UUPLdvRpHU6YzzhloUV0OJhwj0MuxP/view?usp=drive_link">Week 6 Task Video</a>
+<a href="https://drive.google.com/file/d/17RHB8yXKt6HKUmQZ3C5dcYuBvKm6qnyI/view?usp=drive_link">Week 6 Task Video</a>
 <h2>Design Notes</h2>
 
 - Two filters: low & high pass
