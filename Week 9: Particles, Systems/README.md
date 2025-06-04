@@ -18,6 +18,24 @@ Optional prompts:
 
 You're a player running away from a giant space worm. You're a zombie and you need to collect brains to survive. You're a unicorn jumping from one rainbow to another. You collect flowers of different kinds to complete a predefined bouquet.
 
+<h2>Screengrabs</h2>
+
 <h2>Video Link</h2>
 
 <h2>Design Notes</h2>
+
+<h3>Museum Preservation game</h3>
+- archivist is saving archives
+
+- from destroyers (water, dust, more variables would be implemented in future).
+  - is destroyer lands on archive stack: GAME OVER, archives destroyed
+ 
+- Winner: break record of building larger and larger archive stacks (technically never ending).
+  - you are in competition with your last personal record 
+  
+- archivist character
+
+- archives: books (would implement in future: paintings, documents). More advanced graphics in general. 
+
+- referenced on lilo stich sandwich stacker game 
+  - <a href="https://www.disney--games.com/625_sandwich_stacker_32.html"> Lilo Stitch sandwich stacker game</a>
