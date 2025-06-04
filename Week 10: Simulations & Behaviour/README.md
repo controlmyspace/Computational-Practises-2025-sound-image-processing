@@ -1,7 +1,7 @@
 <h1>Week 10: Simulation & Behaviour</h1>
 
 <h2>Weekly Task</h2>
-Create an interactive sketch implementing Particle Systems and ArrayLists.
+Create an interactive sketch implementing Particle Systems and Array Lists.
 The sketch should have: at least 3 vectors (PVector) for each particle: location, velocity, acceleration, at least one type of user interaction impacting the system, at least 1 randomised force impacting the system (e.g. wind).
 
 Feel free to use the optional prompts below: Petals falling from blossom tress, Leaves falling in the autumn, Snow, Cosmic explosion, cosmic dust or falling stars, Sea creatures such as plankton.
