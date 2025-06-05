@@ -25,7 +25,7 @@ void draw() {
     p.update();
     p.display();
     if (p.isOffScreen()) {
-      petals.remove(i);
+      petals.remove(i); 
     }
   }
 }
